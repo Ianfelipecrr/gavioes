@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'grafite';
+    src: url(fonts/DonGraffiti.otf) format(opentype);
+}
+
+:root{
+    --fonte1:Arial, Helvetica, sans-serif;
+    --fonte2:'grafite', times;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: var(--fonte1);
+}
+main, body{
+    min-height: 100vh;
+    background-color: beige;
+}
+
+header>h1, header>p{
+    color: #fff;
+    text-align: center;
+}
+header{
+    background-color: #050505;
+}
+h1#main{
+    text-align: center;
+    font-family: var(--fonte2);
+    color: #ffffff;
+    font-size: 10vw;
+}
+#sub{
+    font-family: var(--fonte1);
+    font-weight: lighter;
+    background-color: transparent;
+    font-style: italic;
+    padding-bottom: 15px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:visited{
+    color: white;
+}
+section{
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    line-height: 2.5em;
+    padding-left: 30px;
+    font-size: 3vw;
+}
+.def{
+    background-color: rgb(197, 197, 197);
+}
+.img{
+    background-color: rgb(223, 205, 183);
+    background-image: url(media/corinthians-torcida-reu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.img>p{
+    background-color: rgba(0, 0, 0, 0.377);
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+}
+section#scnd{
+    background-image: url(media/ICONSPORT_sipausa_48610612.jpeg);
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
